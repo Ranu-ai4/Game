@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeriPulse AI | SAIL Mission 26</title>
+    <link rel="stylesheet" href="index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="dark-mode">
+    <!-- Navigation -->
+    <header class="sail-header">
+        <div class="nav-container">
+            <div class="header-inner">
+                <a class="logo-group" href="index.html">
+                    <div class="logo-icon-wrapper">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 24 24" class="icon-svg" fill="none">
+                                <path d="M12 3L12 19" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M12 5L19 16L12 14Z" fill="white" fill-opacity="0.9"></path>
+                                <path d="M12 8L7 14L12 13Z" fill="white" fill-opacity="0.5"></path>
+                                <path d="M5 20C7 18 9 18 12 20C15 18 17 18 19 20" stroke="#22D3EE" stroke-width="2"
+                                    stroke-linecap="round"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+
+                <nav class="nav-links-desktop">
+                    <a href="submit-idea.html">Submit Idea</a>
+                    <a href="index.html">Apps</a>
+                    <a href="about.html">About</a>
+                </nav>
+
+                <div class="header-actions">
+                    <button id="theme-toggle" class="theme-btn-new" aria-label="Toggle theme">
+                        <div class="theme-icon-container"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                            </svg></div>
+                    </button>
+                    <a class="submit-idea-btn" href="submit-idea.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="sparkle-icon">
+                            <path
+                                d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z">
+                            </path>
+                            <path d="M20 3v4"></path>
+                            <path d="M22 5h-4"></path>
+                            <path d="M4 17v2"></path>
+                            <path d="M5 18H3"></path>
+                        </svg>
+                        Submit Idea
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Breadcrumb & Status -->
+        <div class="app-detail-header">
+            <a href="index.html" class="back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m15 18-6-6 6-6" />
+                </svg>
+                Back to Apps
+            </a>
+            <div class="app-status-row">
+                <div class="status-badge-inline"
+                    style="background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.2); padding: 0.375rem 1rem; border-radius: 9999px;">
+                    <span style="color: #fbbf24; font-size: 0.875rem; font-weight: 600;">In Development</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- App Hero -->
+        <section class="app-hero">
+            <h1 class="hero-tagline">VeriPulse AI<br><span style="color: var(--gray-500); font-weight: 600;">Real-Time
+                    Fake News, Scam & Fraud Detection</span></h1>
+            <p class="hero-description">
+                Advanced real-time detector for fake news, scam messages, and suspicious voice calls.
+                Powered by local-first machine learning models for high privacy, low latency, and secure inference.
+            </p>
+
+            <div class="action-buttons">
+                <a href="submit-idea.html" class="primary-btn">Get Started <svg xmlns="http://www.w3.org/2000/svg"
+                        width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" style="margin-left: 0.5rem;">
+                        <path d="M5 12h14m-7-7 7 7-7 7" />
+                    </svg></a>
+                <a href="index.html" class="secondary-btn">View All Apps</a>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="metrics-section">
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-label">TAM 2024</div>
+                    <div class="metric-value">$3.2B</div>
+                    <div class="metric-sub">Market Size</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">TAM 2030</div>
+                    <div class="metric-value">$18.5B</div>
+                    <div class="metric-sub">42.0% CAGR</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">DEV TIME</div>
+                    <div class="metric-value">4W</div>
+                    <div class="metric-sub">Build period</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">TEAM</div>
+                    <div class="metric-value">1</div>
+                    <div class="metric-sub">Engineers</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Capabilities -->
+        <section class="detail-section">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <div class="section-tag">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                    </svg>
+                    Capabilities
+                </div>
+                <h2 class="prominent-title">Why Choose VeriPulse AI</h2>
+            </div>
+            <div class="capabilities-grid">
+                <div class="cap-card">
+                    <div class="cap-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z" />
+                            <path
+                                d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z" />
+                            <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4" />
+                        </svg></div>
+                    <div>
+                        <h4>Real-Time Detection</h4>
+                        <p>Instant analysis of text, links, and voice calls to identify scams, fake news, and fraud
+                            patterns.</p>
+                    </div>
+                </div>
+                <div class="cap-card">
+                    <div class="cap-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                        </svg></div>
+                    <div>
+                        <h4>Privacy-First Architecture</h4>
+                        <p>Local-first ML models ensure sensitive user data never leaves the device or secure
+                            environment.</p>
+                    </div>
+                </div>
+                <div class="cap-card">
+                    <div class="cap-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                        </svg></div>
+                    <div>
+                        <h4>Multi-Modal Intelligence</h4>
+                        <p>Supports text messages, news articles, social posts, and voice call analysis.</p>
+                    </div>
+                </div>
+                <div class="cap-card">
+                    <div class="cap-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m5 12 13-10-3 10 8 2-13 10 3-10-8-2Z" />
+                        </svg></div>
+                    <div>
+                        <h4>High Accuracy & Speed</h4>
+                        <p>Optimized models deliver low-latency results suitable for real-time protection.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Landscape & Tech -->
+        <section class="section-bg">
+            <div class="detail-section">
+                <div class="grid-2-col">
+                    <div class="tech-stack-container">
+                        <h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" style="color: #f59e0b;">
+                                <path
+                                    d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" />
+                            </svg> Technology Stack</h3>
+                        <div class="tech-pills">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">FastAPI</span>
+                            <span class="tech-pill">TensorFlow</span>
+                            <span class="tech-pill">React</span>
+                            <span class="tech-pill">PostgreSQL</span>
+                            <span class="tech-pill">Redis</span>
+                            <span class="tech-pill">Speech-to-Text</span>
+                        </div>
+                    </div>
+                    <div class="landscape-container">
+                        <h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" style="color: #a855f7;">
+                                <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+                                <path d="M18 17V9" />
+                                <path d="M13 17V5" />
+                                <path d="M8 17v-3" />
+                            </svg> Competitive Landscape</h3>
+                        <div class="landscape-list">
+                            <div class="landscape-item">
+                                <span class="landscape-label">Local-First Privacy</span>
+                                <span class="landscape-value">Unique Differentiator</span>
+                            </div>
+                            <div class="landscape-item">
+                                <span class="landscape-label">Voice Call Analysis</span>
+                                <span class="landscape-value">Advanced Capability</span>
+                            </div>
+                            <div class="landscape-item">
+                                <span class="landscape-label">High-Speed Inference</span>
+                                <span class="landscape-value">Optimized Engine</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </section>
+
+        <!-- Live Demo Section -->
+        <section class="detail-section" id="live-demo">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <div class="section-tag" style="margin-bottom: 1rem;">Prototype Simulation</div>
+                <h2 class="prominent-title" style="margin-bottom: 1rem;">Try Variplus AI Live Detection</h2>
+                <p style="color: var(--gray-500); max-width: 600px; margin: 0 auto;">
+                    Paste a message, upload a call audio, or enter a news link to check authenticity in seconds.
+                </p>
+            </div>
+
+            <div class="demo-card-container">
+                <div class="demo-tabs">
+                    <button class="demo-tab active" data-tab="text">Text Message Example</button>
+                    <button class="demo-tab" data-tab="audio">Call Audio Upload</button>
+                    <button class="demo-tab" data-tab="url">News Proxy Check</button>
+                </div>
+
+                <div class="demo-content">
+                    <!-- Text Tab -->
+                    <div class="demo-pane active" id="pane-text">
+                        <textarea class="demo-input" placeholder="Paste suspicious text message here..."></textarea>
+                    </div>
+
+                    <!-- Audio Tab -->
+                    <div class="demo-pane" id="pane-audio">
+                        <div class="file-upload-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" style="color: var(--indigo-500); margin-bottom: 1rem;">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="17 8 12 3 7 8" />
+                                <line x1="12" x2="12" y1="3" y2="15" />
+                            </svg>
+                            <p>Click to upload audio file (MP3, WAV)</p>
+                            <input type="file" style="display: none;">
+                        </div>
+                    </div>
+
+                    <!-- URL Tab -->
+                    <div class="demo-pane" id="pane-url">
+                        <input type="text" class="demo-input" placeholder="https://example.com/news-article">
+                    </div>
+
+                    <button class="analyze-btn" id="analyze-btn">
+                        <span class="btn-text">Analyze Now</span>
+                        <div class="loader" style="display: none;"></div>
+                    </button>
+                </div>
+
+                <!-- Result Area -->
+                <div class="demo-result" id="demo-result" style="display: none;">
+                    <!-- Content injected via JS -->
+                </div>
+
+                <p class="demo-disclaimer">
+                    This is a prototype simulation. Real-time AI detection will be available in future versions.
+                </p>
+            </div>
+        </section>
+
+        <!-- Investment Section -->
+        <section class="detail-section">
+            <h3 style="text-align: center; margin-bottom: 3rem; font-size: 1.25rem; font-weight: 700;">Investment
+                Overview</h3>
+            <div class="investment-cards">
+                <div class="invest-card indigo">
+                    <div class="invest-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" x2="12" y1="2" y2="22" />
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                        </svg></div>
+                    <div class="invest-price">$30K–45K</div>
+                    <div class="invest-desc">Development Cost</div>
+                </div>
+                <div class="invest-card emerald">
+                    <div class="invest-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg></div>
+                    <div class="invest-price">Week 1–4</div>
+                    <div class="invest-desc">Development Timeline</div>
+                </div>
+                <div class="invest-card amber">
+                    <div class="invest-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg></div>
+                    <div class="invest-price">4 People</div>
+                    <div class="invest-desc">Team Size Required</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section-bg">
+            <div class="detail-section">
+                <div class="faq-container">
+                    <h3 style="text-align: center; margin-bottom: 3rem; font-size: 1.25rem; font-weight: 700;">
+                        Frequently Asked Questions</h3>
+                    <div class="faq-box">
+                        <button class="faq-btn">
+                            <span>What makes VeriPulse AI unique?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="m18 15-6-6-6 6" />
+                            </svg>
+                        </button>
+                        <div class="faq-content">
+                            VeriPulse AI uses local-first, real-time ML models to detect scams and fake content without
+                            sending sensitive data to external servers.
+                        </div>
+                    </div>
+                    <div class="faq-box">
+                        <button class="faq-btn">
+                            <span>Who is this for?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="faq-content">
+                            VeriPulse AI is designed for individuals, enterprise teams, and platforms that need to
+                            verify the authenticity of information and protect against social engineering attacks.
+                        </div>
+                    </div>
+                    <div class="faq-box">
+                        <button class="faq-btn">
+                            <span>Does it support voice call detection?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="faq-content">
+                            Yes, our advanced multi-modal engine can analyze live voice streams or recordings to
+                            identify deepfake audio patterns and common scam scripts in real-time.
+                        </div>
+                    </div>
+                    <div class="faq-box">
+                        <button class="faq-btn">
+                            <span>How long does deployment take?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="faq-content">
+                            A standard integration typically takes 4 weeks. This includes model customization, local
+                            environment setup, and front-end implementation.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Similar Apps -->
+        <section class="detail-section">
+            <h3 class="similar-apps-title">Similar Applications</h3>
+            <div class="similar-grid">
+                <a href="#" class="sim-card">
+                    <span class="sim-icon">🛡️</span>
+                    <span class="sim-name">VeriPulse Pro</span>
+                    <span class="sim-tag">Enterprise Deepfake & Voice Fraud Detection</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-banner">
+            <h2>Ready to Build VeriPulse AI?</h2>
+            <p>Join SAIL's Mission 26 and bring this application to life.</p>
+            <a href="submit-idea.html" class="cta-white-btn">
+                Submit Your Interest
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14m-7-7 7 7-7 7" />
+                </svg>
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="sail-footer">
+        <div class="footer-top-gradient"></div>
+        <div class="footer-container">
+            <div class="footer-main-grid">
+                <div class="footer-brand-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon-footer">
+                            <svg viewBox="0 0 24 24" class="icon-svg-footer" fill="none">
+                                <path d="M12 3L12 19" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M12 5L19 16L12 14Z" fill="white" fill-opacity="0.9"></path>
+                                <path d="M12 8L7 14L12 13Z" fill="white" fill-opacity="0.5"></path>
+                                <path d="M5 20C7 18 9 18 12 20C15 18 17 18 19 20" stroke="#22D3EE" stroke-width="2"
+                                    stroke-linecap="round"></path>
+                            </svg>
+                        </div>
+                        <div class="footer-logo-text">
+                            <span class="footer-logo-main">SAIL</span>
+                            <span class="footer-logo-sub">An Infinia Company</span>
+                        </div>
+                    </div>
+                    <p class="footer-tagline">SAIL — SAIF AI Innovation Lab. Mission 26: Building 26 enterprise AI
+                        applications in 26 weeks. Setting a new standard for rapid AI innovation.</p>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="index.html">All Apps</a></li>
+                        <li><a href="https://sail26.iamsaif.ai/about/">About SAIL</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Ecosystem</h4>
+                    <ul>
+                        <li><a href="https://iamsaif.ai">SAIF Platform</a></li>
+                        <li><a href="https://infiniatechnologies.com">Infinia Technologies</a></li>
+                        <li><a href="https://wa.me/971506126652">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom-part">
+                <p class="copyright">© 2026 SAIF — An Infinia Company. Made with <span class="heart">❤️</span></p>
+                <div class="footer-badges">
+                    <span class="badge mission">SAIL Mission 26</span>
+                    <span class="dot">•</span>
+                    <span class="badge frequency">26 Apps in 26 Weeks</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
